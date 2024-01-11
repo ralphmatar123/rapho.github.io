@@ -1,0 +1,235 @@
+
+<meta charset="utf-8">
+<html>
+<head>
+  <title>Bookstore Search Bar</title>
+  <link rel="stylesheet" href="books.css">
+  
+</head>
+<body>
+  <section id="main">
+    <div class="container-fuild">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="h1 text-center">Our Books</h1>
+          <!-- Filter buttons -->
+          <div id="myBtnContainer" class="col-md-12">
+            <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+            <button class="btn" onclick="filterSelection('fantasy')"> Fantasy</button>
+            <button class="btn" onclick="filterSelection('romance')"> Romance</button>
+            <button class="btn" onclick="filterSelection('autoBiograpghy')"> Auto-Biography</button>
+            <button class="btn" onclick="filterSelection('crimeDrama')"> Crime-Drama</button>
+            <button class="btn" onclick="filterSelection('history')"> History</button>
+            <button class="btn" onclick="filterSelection('fiction')"> Fiction</button>
+            <button class="btn" onclick="filterSelection('childFiction')"> Children's Fiction</button>
+            <button class="btn" onclick="filterSelection('nonFiction')"> Non-Fiction</button>
+            <button class="btn" onclick="filterSelection('thriller')"> Thriller</button>
+            <button class="btn" onclick="filterSelection('mystery')"> Mystery</button>
+            <button class="btn" onclick="filterSelection('play')"> Play</button>
+            <button class="btn" onclick="filterSelection('memoir')"> Memoir</button>
+            <button class="btn" onclick="filterSelection('novel')"> Novel</button>
+            <button class="btn" onclick="filterSelection('critique')"> Critique</button>
+          </div>
+          <!--Dropdown filter-->
+          <div class="dropdown">
+            <button class="dropbtn">Dropdown</button>
+            <div class="dropdown-content">
+              <a onclick="filterSelection('all')"> Show all</a>
+              <a onclick="filterSelection('fantasy')"> Fantasy</a>
+              <a onclick="filterSelection('romance')"> Romance</a>
+              <a onclick="filterSelection('autoBiograpghy')"> Auto-Biography</a>
+              <a onclick="filterSelection('crimeDrama')"> Crime-Drama</a>
+              <a onclick="filterSelection('history')"> History</a>
+              <a onclick="filterSelection('childFiction')"> Children's Fiction</a>
+              <a onclick="filterSelection('nonFiction')"> Non-Fiction</a>
+              <a onclick="filterSelection('thriller')"> Thriller</a>
+              <a onclick="filterSelection('mystery')"> Mystery</a>
+              <a onclick="filterSelection('play')"> Play</a>
+              <a onclick="filterSelection('memoir')"> Memoir</a>
+              <a onclick="filterSelection('novel')"> Novel</a>
+              <a onclick="filterSelection('critique')"> Critique</a>
+            </div>
+          </div>
+          <div id="book-shelf" class="row row-eq-height">
+            <article class="col-md-3 col-sm-6 filterDiv crimeDrama thriller novel">
+              <img src="b20.jpg"/>
+              <p class="text-center">The 15th Affair
+                <br>
+                <em>James Patterson <a href=""></a></em>
+              </p>
+            </article>
+            <article class="col-md-3 col-sm-6 filterDiv fiction novel">
+              <img src="b19.jpg"/>
+              <p class="text-center">Before the Fall
+                <br>
+                <em>Noah Hawley <a href="before.html">read now</a></em>
+              </p>
+            </article>
+            <article class="col-md-3 col-sm-6 filterDiv childFiction novel">
+              <img src="b18.jpg"/>
+              <p class="text-center">Diary of a Wimpy Kid: Double Down
+                <br>
+                <em>Jeff Kinney <a href="diary.html">read now</a></em>
+              </p>
+            </article>
+            <article class="col-md-3 col-sm-6 filterDiv childFiction fantasy play">
+              <img src="b17.jpg"/>
+              <p class="text-center">Harry Potter and the Cursed Child
+                <br>
+                <em>J.K. Rowling <a href="harrypotter.html">read now</a></em>
+              </p>
+            </article>
+            <article class="col-md-3 col-sm-6 filterDiv nonFiction critique">
+              <img src="b16.jpg"/>
+              <p class="text-center">Hillbilly Elegy: A Memoir of a Family 
+                <br>
+                <em>J.D. Vance <a href="">read now</a></em>
+              </p>
+            </article>
+            <article class="col-md-3 col-sm-6 filterDiv history critique">
+              <img src="b15.jpg"/>
+              <p class="text-center">Killing the Rising Sun
+                <br>
+                <em>Bill O'Reilly <a href="">read now</a></em>
+              </p>
+            </article>
+            <article class="col-md-3 col-sm-6 filterDiv thriller novel">
+              <img src="b14.jpg"/>
+              <p class="text-center">The Black Widow
+                <br>
+                <em>Daniel Silva <a href="">read now</a></em>
+              </p>
+            </article>
+            <article class="col-md-3 col-sm-6 filterDiv fiction novel">
+              <img src="b13.jpg"/>
+              <p class="text-center">Night School: A Jack Reacher Novel
+                <br>
+                <em>Lee Child <a href="">read now</a></em>
+              </p>
+            </article>
+            <article class="col-md-3 col-sm-6 filterDiv crimeDrama novel">
+              <img src="b12.jpg"/>
+              <p class="text-center">The Last Mile
+                <br>
+                <em>David Baldacci <a href="">read now</a></em>
+              </p>
+            </article>
+            <article class="col-md-3 col-sm-6 filterDiv crimeDrama novel">
+              <img src="b11.jpg"/>
+              <p class="text-center">The Whistler
+                <br>
+                <em>John Grisham <a href="">read now</a></em>
+              </p>
+            </article>
+            <article class="col-md-3 col-sm-6 filterDiv fiction novel">
+              <img src="b10.jpg"/>
+              <p class="text-center">Truly Madly Guilty
+                <br>
+                <em>Liane Moriarty <a href="">read now</a></em>
+              </p>
+            </article>
+            <article class="col-md-3 col-sm-6 filterDiv autoBiograpghy memoir">
+              <img src="b9.jpg"/>
+              <p class="text-center">When Breath Becomes Air
+                <br>
+                <em>Paul Kalanithi <a href="">read now</a></em>
+              </p>
+            </article>
+            <article class="col-md-3 col-sm-6 filterDiv crimeDrama thriller novel">
+              <img src="b8.jpg"/>
+              <p class="text-center">Fool Me Once
+                <br>
+                <em>Harlan Coben <a href="">read now</a></em>
+              </p>
+            </article>
+            <article class="col-md-3 col-sm-6 filterDiv autoBiograpghy history memoir">
+              <img src="b7.jpg"/>
+              <p class="text-center">Crisis of Character
+                <br>
+                <em>Gary. J Byrne <a href="">read now</a></em>
+              </p>
+            </article>
+            <article class="col-md-3 col-sm-6 filterDiv crimeDrama thriller novel">
+              <img src="b6.jpg"/>
+              <p class="text-center">The Wrong Side of Goodbye
+                <br>
+                <em>Michael Connelly <a href="">read now</a></em>
+              </p>
+            </article>
+            <article class="col-md-3 col-sm-6 filterDiv autoBiograpghy romance memoir ">
+              <img src="b5.jpg"/>
+              <p class="text-center">The Magnolia Story
+                <br>
+                <em>Chip and Joanna Gaines <a href="">read now</a></em>
+              </p>
+            </article>
+            <article class="col-md-3 col-sm-6 filterDiv fiction novel">
+              <img src="b4.jpg"/>
+              <p class="text-center">The Nest
+                <br>
+                <em>Cynthia D'Aprix Sweeney <a href="">read now</a></em>
+              </p>
+            </article>
+            <article class="col-md-3 col-sm-6 filterDiv romance fiction novel">
+              <img src="b3.jpg"/>
+              <p class="text-center">One With You: A Crossfire Novel
+                <br>
+                <em>Sylvia Day <a href="">read now</a></em>
+              </p>
+            </article>
+            <article class="col-md-3 col-sm-6 filterDiv crimeDrama thriller novel">
+              <img src="b2.jpg"/>
+              <p class="text-center">The Obsession
+                <br>
+                <em>Nora Roberts <a href="">read now</a></em>
+              </p>
+            </article>
+            <article class="col-md-3 col-sm-6 filterDiv mystery novel">
+              <img src="b1.png"/>
+              <p class="text-center">Everything We Keep
+                <br>
+                <em>Kerry Lonsdale <a href="">read now</a></em>
+              </p>
+            </article>
+            <article class="col-md-3 col-sm-6 filterDiv romance fiction novel">
+            <img src="r1.jpg" alt="uglylove"/>
+              <p class="text-center">Ugly Love 
+                <br>
+                <em>Colleen Hoover <a href="uglylove.html">read now</a></em>
+              </p>
+            </article>
+            <article class="col-md-3 col-sm-6 filterDiv romance fiction novel">
+             <img src="r2.jpg"/>
+              <p class="text-center">Heart Bones 
+                <br>
+                <em>Colleen Hoover <a href="heartbones.html">read now</a></em>
+              </p>
+            </article>
+            <article class="col-md-3 col-sm-6 filterDiv romance fiction novel">
+              <img src="r3.jpg"/>
+               <p class="text-center">It starts with us 
+                 <br>
+                 <em>Colleen Hoover <a href="itstartswithus.html">read now</a></em>
+               </p>
+             </article>
+             <article class="col-md-3 col-sm-6 filterDiv romance fiction novel">
+              <img src="r4.jpg"/>
+               <p class="text-center">It ends with us 
+                 <br>
+                 <em>Colleen Hoove <a href="itendswithus.html">read now</a>r</em>
+               </p>
+             </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <script type="text/javascript" src="books.js">
+  </script>
+</body>
+</html>
+
+
+
+
